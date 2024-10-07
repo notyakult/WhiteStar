@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> White Star Trading </title>
+    <style>
+        body {
+            text-align: center; /* Center all text within the body */
+        }
+        table {
+            width: 70%;
+            border-collapse: collapse;
+            margin: 20px auto; /* Center table on the page */
+        }
+        th, td {
+            padding: 15px;
+            text-align: left; /* Keep text alignment for table cells */
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 100px; /* Adjust image size as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        input[type="text"] {
+            width: 200px;
+        }
+        .arrow {
+            font-size: 18px;
+            margin-left: 10px;
+        }
+        .arrow.green {
+            color: green;
+        }
+        .arrow.red {
+            color: red;
+        }
+        h1 {
+            margin: 20px 0; /* Optional: Add some space above and below */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>White Star Trading</h1>
+    <h2>Product Prices</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Price (kyats)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Ahmay Htwar 1 liter </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/AMH 1 liter.jpg" alt="Ahmay Htwar 1 liter"></td>
+                <td>
+                    <input type="text" id="price1" value="12000 kyats" onchange="updateArrow(1)">
+                    <span class="arrow" id="arrow1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Ahmay Htwar 2 liters </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/AMH 2 liters.jpg" alt="Ahmay Htwar 2 liter"></td>
+                <td>
+                    <input type="text" id="price2" value="24000" onchange="updateArrow(2)">
+                    <span class="arrow" id="arrow2"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Ahmay Htawr 3 liters </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/AMH 3 liters.jpg" alt="Ahmay Htawr 3 liters"></td>
+                <td>
+                    <input type="text" id="price3" value="36000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Ahmay Htawr 6 liters </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/AMH 6 liters.jpg" alt="Ahmay Htawr 6 liters"></td>
+                <td>
+                    <input type="text" id="price3" value="72000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Ahmay Htawr 9 liters </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/AMH 9 liters.jpg" alt="Ahmay Htawr 9 liters"></td>
+                <td>
+                    <input type="text" id="price3" value="108000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Yangon Peanut Oil 0.12 Viss </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/YP 0.12 Viss.jpg" alt="Yangon Peanut Oil 0.12 Viss"></td>
+                <td>
+                    <input type="text" id="price3" value="3100" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Yangon Peanut Oil 0.25 Viss </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/YP 0.25 Viss.jpg" alt="Yangon Peanut Oil 0.25 Viss"></td>
+                <td>
+                    <input type="text" id="price3" value="5600" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Yangon Peanut Oil 0.5 Viss </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/YP 0.5 Viss.jpg" alt="Yangon Peanut Oil 0.5 Viss"></td>
+                <td>
+                    <input type="text" id="price3" value="11000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Yangon Peanut Oil 0.6 Viss </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/YP 0.6 Viss.jpg" alt="Yangon Peanut Oil 0.6 Viss"></td>
+                <td>
+                    <input type="text" id="price3" value="12500" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Yangon Peanut Oil 1 Viss </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/YP 1 Viss.jpg" alt="Yangon Peanut Oil 1 Viss"></td>
+                <td>
+                    <input type="text" id="price3" value="22000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Yangon Peanut Oil 2 Viss </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/YP 2 Viss.jpg" alt="Yangon Peanut Oil 2 Viss"></td>
+                <td>
+                    <input type="text" id="price3" value="44000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Yangon Peanut Oil 3 Viss </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/YP 3 Viss.jpg" alt="Yangon Peanut Oil 3 Viss"></td>
+                <td>
+                    <input type="text" id="price3" value="66000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Yangon Peanut Oil 5 Viss </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/YP 5 Viss.jpg" alt="Yangon Peanut Oil 5 Viss"></td>
+                <td>
+                    <input type="text" id="price3" value="110000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Sunar 5 liters </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/Sunar 5 liters.jpg" alt="Sunar 5 liters"></td>
+                <td>
+                    <input type="text" id="price3" value="75000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Kyar Phoo 1 liter </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/KP 1 liter.jpg" alt="KP 1 liter"></td>
+                <td>
+                    <input type="text" id="price3" value="14500" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Kyar Phoo 5 liters </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/KP 5 liters.jpg" alt="KP 5 liter"></td>
+                <td>
+                    <input type="text" id="price3" value="72000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Gaysorn 1 liter </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/Gaysorn 1 liter.jpg" alt="Gaysorn 1 liter"></td>
+                <td>
+                    <input type="text" id="price3" value="8700" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Gaysorn 2 liters </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/Gaysorn 2 liters.jpg" alt="Gaysorn 2 liters"></td>
+                <td>
+                    <input type="text" id="price3" value="17400" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td> Gaysorn 5 liters </td>
+                <td><img src="file:///Users/iun/Downloads/HTML/Gaysorn 5 liters.jpg" alt="Gaysorn 5 liters"></td>
+                <td>
+                    <input type="text" id="price3" value="42000" onchange="updateArrow(3)">
+                    <span class="arrow" id="arrow3"></span>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+    <script>
+        let previousPrices = {
+            1: 10,
+            2: 20,
+            3: 30
+        };
+
+        // Load saved prices from localStorage on page load
+        window.onload = function() {
+            for (let i = 1; i <= 3; i++) {
+                const savedPrice = localStorage.getItem(`price${i}`);
+                if (savedPrice) {
+                    document.getElementById(`price${i}`).value = savedPrice;
+                    updateArrow(i); // Update arrow for saved prices
+                }
+            }
+        };
+
+        function updateArrow(productIndex) {
+            const priceInput = document.getElementById(`price${productIndex}`);
+            const price = parseFloat(priceInput.value) || 0;
+
+            const arrow = document.getElementById(`arrow${productIndex}`);
+            if (price > previousPrices[productIndex]) {
+                arrow.textContent = "↑";
+                arrow.className = "arrow green";
+            } else if (price < previousPrices[productIndex]) {
+                arrow.textContent = "↓";
+                arrow.className = "arrow red";
+            } else {
+                arrow.textContent = "";
+            }
+
+            // Save the new price to localStorage
+            localStorage.setItem(`price${productIndex}`, price);
+            previousPrices[productIndex] = price; // Update previous price
+        }
+    </script>
+
+</body>
+</html>
